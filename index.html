@@ -146,24 +146,21 @@
 
                         <div class="col-md-4">
                             <div class="form-check">
-                            <input class="form-check-input" type="radio" id="classicCut" name="service" value="classicCut">
+                            <input class="form-check-input" type="radio" id="classicCut" name="service1" value="classicCut">
                             <label class="form-check-label" for="classicCut">Classic Cut</label>
                             </div>
                         </div>
 
-                        
-
-
                         <div class="col-md-4">
                             <div class="form-check">
-                            <input class="form-check-input" type="radio" id="blowoutStyle" name="service" value="blowoutStyle">
+                            <input class="form-check-input" type="radio" id="blowoutStyle" name="service2" value="blowoutStyle">
                             <label class="form-check-label" for="blowoutStyle">Blowout Style</label>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="hydrationTreatment" name="addons[]" value="hydrationTreatment">
+                            <input class="form-check-input" type="checkbox" id="hydrationTreatment" name="addons" value="hydrationTreatment">
                             <label class="form-check-label" for="hydrationTreatment">Hydration Treatment</label>
                             </div>
                         </div>
@@ -171,44 +168,42 @@
 
                         <div class="col-md-4">
                             <div class="form-check">
-                            <input class="form-check-input" type="radio" id="signatureCut" name="service" value="signatureCut">
+                            <input class="form-check-input" type="radio" id="signatureCut" name="service1" value="signatureCut">
                             <label class="form-check-label" for="signatureCut">Signature Cut</label>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-check">
-                            <input class="form-check-input" type="radio" id="curlWaveStyle" name="service" value="curlWaveStyle">
+                            <input class="form-check-input" type="radio" id="curlWaveStyle" name="service2" value="curlWaveStyle">
                             <label class="form-check-label" for="curlWaveStyle">Curl &amp; Wave Style</label>
                             </div>
                         </div>
 
-                        
-
                         <div class="col-md-4">
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="scalpTherapy" name="addons[]" value="scalpTherapy">
+                            <input class="form-check-input" type="checkbox" id="scalpTherapy" name="addons" value="scalpTherapy">
                             <label class="form-check-label" for="scalpTherapy">Scalp Therapy</label>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-check">
-                            <input class="form-check-input" type="radio" id="premiumCut" name="service" value="premiumCut">
+                            <input class="form-check-input" type="radio" id="premiumCut" name="service1" value="premiumCut">
                             <label class="form-check-label" for="premiumCut">Premium Cut</label>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-check">
-                            <input class="form-check-input" type="radio" id="sleekPressStyle" name="service" value="sleekPressStyle">
+                            <input class="form-check-input" type="radio" id="sleekPressStyle" name="service2" value="sleekPressStyle">
                             <label class="form-check-label" for="sleekPressStyle">Sleek Press Style</label>
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="hotTowelService" name="addons[]" value="hotTowelService">
+                            <input class="form-check-input" type="checkbox" id="hotTowelService" name="addons" value="hotTowelService">
                             <label class="form-check-label" for="hotTowelService">Hot Towel Service</label>
                             </div>
                         </div>
@@ -245,7 +240,7 @@
                         <p>Your information so we can contact you</p>
                         <p>Form to enter name, email, phone</p>
 
-                        <form>
+                        <form id="bookingForm">
                         <div class="form-group">
                             <label for="exampleInputName">Name</label>
                             <input type="text" class="form-control" id="nameInput" placeholder="Enter name">
@@ -253,21 +248,84 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPhone">Phone number</label>
                             <input type="text" class="form-control" id="phoneInput" placeholder="Enter phone number">
-                            
                         </div>
-                      
-                       
+ 
                         <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
+                        
                     </div>
                 </div>
             </div>
+
+            <!-- Confirmation Modal -->
+            <!-- Modal component: https://getbootstrap.com/docs/4.6/components/modal/ -->
+            <div class="modal fade" id="confirmModal">
+                 <div class="modal-dialog" role="document">
+            
+                <div class="modal-content">
+
+                <h4 class="modal-title">Confirm Booking</h4>
+                
+                <div class="modal-body" id="confirmText"></div>
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+                </div>
+            </div>
+
+            <script>
+            document.getElementById("bookingForm").addEventListener("submit", function(e){
+                e.preventDefault(); // stop refresh
+
+                // service1 - Haircut
+                const service1 = document.querySelector('input[name="service1"]:checked');
+                let service1Text = service1 ? document.querySelector('label[for="'+service1.id+'"]').innerText : "None";
+
+                // service2 - Hairstyling
+                const service2 = document.querySelector('input[name="service2"]:checked');
+                let service2Text = service2 ? document.querySelector('label[for="'+service2.id+'"]').innerText : "None";
+
+                // addons
+                const addons = document.querySelectorAll('input[name="addons"]:checked');
+                let addonList = [];
+                addons.forEach(a => {
+                    addonList.push(document.querySelector('label[for="'+a.id+'"]').innerText);
+                });
+                if(addonList.length === 0) addonList.push("None");
+
+                // date
+                const date_old = document.getElementById("dateTimeInput").value || "Not chosen";
+                if (date_old !== "Not chosen") {
+                    date = date_old.replace("T", " ");
+                }
+
+                // info
+                const name = document.getElementById("nameInput").value || "Blank";
+                const email = document.getElementById("exampleInputEmail").value || "Blank";
+                const phone = document.getElementById("phoneInput").value || "Blank";
+
+                // put text into modal
+                document.getElementById("confirmText").innerHTML =
+                    "<strong>Haircut:</strong> " + service1Text + "<br>" +
+                    "<strong>Hairstyling:</strong> " + service2Text + "<br>" +
+                    "<strong>Add-ons:</strong> " + addonList.join(", ") + "<br>" +
+                    "<strong>Date and time:</strong> " + date + "<br>" +
+                    "<strong>Name:</strong> " + name + "<br>" +
+                    "<strong>Email:</strong> " + email + "<br>" +
+                    "<strong>Phone:</strong> " + phone;
+
+                // open modal
+                $('#confirmModal').modal('show');
+            });
+            </script>
+
 
 </body>
 
