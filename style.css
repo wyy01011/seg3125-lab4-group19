@@ -36,3 +36,55 @@ h3, h4 {
   background-repeat: no-repeat;
   padding: 40px 0;           
 }
+
+/*Styling for the staff section.*/
+.staff {
+  background-image: url("staffbg.jpg"); 
+  background-size: cover;     
+  background-position: center; 
+  background-repeat: no-repeat;
+  padding: 40px 0;           
+}
+
+/*Styling for the header in the staff section specfically.*/
+.staff h3 {
+    color: white;
+}
+
+/*Styling below done for the card components for staff members.*/
+.card-columns .card {
+    width: 260px !important; /*!important tag overrides the given CSS from bootstrap.*/
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card-columns .card.bg-warning,
+.card-columns .card.bg-danger {
+    background-color: #d4d4d4 !important;
+}
+
+.card-columns .card .card-img-top {
+    border: none;
+    border-radius: 0;
+    display: block;
+}
+
+.card-columns .card .btn-primary {
+    background-color: #616161;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.25s ease;
+}
+
+/*Styling for the buttons inside cards.*/
+.card-columns .card .btn-primary:hover {
+    background-color: #222222;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

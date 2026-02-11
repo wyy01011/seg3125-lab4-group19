@@ -49,7 +49,7 @@
                 </tbody>
             </table>
         </div>
-        
+
         <div class="container">
             <h4>Hairstyling</h4>
             <p>Style off your hair after a fresh cut or walk in! Additional charges apply.</p>
@@ -114,7 +114,57 @@
 
     </div>
 
-    <h3>Our Staff Team</h3>
+    <div class="staff"> <!--Section to showcase the staff team and their role.-->
+        <!--Code for cards and bootstrap components retrieved from W3Schools: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp.-->
+        <!--Card code also retrieved from the provided GitHub example code.-->
+        <br>
+        <h3>Our Staff Team</h3>
+        <br>
+
+        <div class="container p-3">
+            <div class="card-columns"> <!--Div class to hold cards in columns.-->
+
+                <!--Staff member 1.-->
+                <div class="card bg-danger">
+                    <img class="card-img-top" src="edwin.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Edwin</h4> <!--Staff name.-->
+                        <p class="card-text">Licensed Barber for 15 years.</p>
+                        <a href="#profile1" class="btn btn-primary" data-toggle="collapse">Learn About Me</a> <!--Collapsible part to showcase extra information about the staff member.-->
+                        <div id="profile1" class="collapse p-3">
+                            <p>My name is Edwin Santacruz, im 33 years of age. Born and raised in Los Angeles CA. I moved to San Antonio TX in 2011. I started cutting hair at the age of 15 but I have been a Texas licensed barber since 2013. Number 1 Lakers Fan, best team in the NBA .</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Staff member 2.-->
+                <div class="card bg-danger">
+                    <img class="card-img-top" src="drew.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Drew</h4>
+                        <p class="card-text">Senior Hair Stylist for 23 years.</p>
+                        <a href="#profile2" class="btn btn-primary" data-toggle="collapse">Learn About Me</a>
+                        <div id="profile2" class="collapse p-3">
+                            <p>My name is Drew Oneal, I’m 28 years old. From San Antonio, TX. I have been a licensed barber since 2012.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Staff member 3.-->
+                <div class="card bg-danger">
+                    <img class="card-img-top" src="samuel.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Samuel</h4>
+                        <p class="card-text">Practiced Barber for 12 years.</p>
+                        <a href="#profile3" class="btn btn-primary" data-toggle="collapse">Learn About Me</a>
+                        <div id="profile3" class="collapse p-3">
+                            <p>My name is Samuel Bahng and I have been a licensed barber since 2022! Moved to San Antonio when I was a kid and have been here ever since!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Collapsible with multiple items -->
     <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
@@ -127,204 +177,223 @@
                 </div>
                 <div id="collapseService" class="collapse show" data-parent="#accordion">
                     <div class="card-body">
-                    <p>Here is our list of services</p>
+                        <p>Here is our list of services</p>
 
-                    <form>
-                        <div class="row">
+                        <form>
+                            <div class="row">
 
-                        <div class="col-md-4">
-                            <h4>Haircuts</h4>
-                        </div>
+                                <div class="col-md-4">
+                                    <h4>Haircuts</h4>
+                                </div>
 
-                        <div class="col-md-4">
-                            <h4>Hairstyling</h4>
-                        </div>
+                                <div class="col-md-4">
+                                    <h4>Hairstyling</h4>
+                                </div>
 
-                        <div class="col-md-4">
-                            <h4>Add-ons</h4>
-                        </div>
+                                <div class="col-md-4">
+                                    <h4>Add-ons</h4>
+                                </div>
 
-                        <div class="col-md-4">
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" id="classicCut" name="service1" value="classicCut">
-                            <label class="form-check-label" for="classicCut">Classic Cut</label>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="classicCut" name="service1"
+                                            value="classicCut">
+                                        <label class="form-check-label" for="classicCut">Classic Cut</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="blowoutStyle" name="service2"
+                                            value="blowoutStyle">
+                                        <label class="form-check-label" for="blowoutStyle">Blowout Style</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="hydrationTreatment"
+                                            name="addons" value="hydrationTreatment">
+                                        <label class="form-check-label" for="hydrationTreatment">Hydration
+                                            Treatment</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="signatureCut" name="service1"
+                                            value="signatureCut">
+                                        <label class="form-check-label" for="signatureCut">Signature Cut</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="curlWaveStyle" name="service2"
+                                            value="curlWaveStyle">
+                                        <label class="form-check-label" for="curlWaveStyle">Curl &amp; Wave
+                                            Style</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="scalpTherapy" name="addons"
+                                            value="scalpTherapy">
+                                        <label class="form-check-label" for="scalpTherapy">Scalp Therapy</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="premiumCut" name="service1"
+                                            value="premiumCut">
+                                        <label class="form-check-label" for="premiumCut">Premium Cut</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="sleekPressStyle"
+                                            name="service2" value="sleekPressStyle">
+                                        <label class="form-check-label" for="sleekPressStyle">Sleek Press
+                                            Style</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="hotTowelService"
+                                            name="addons" value="hotTowelService">
+                                        <label class="form-check-label" for="hotTowelService">Hot Towel
+                                            Service</label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" id="blowoutStyle" name="service2" value="blowoutStyle">
-                            <label class="form-check-label" for="blowoutStyle">Blowout Style</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="hydrationTreatment" name="addons" value="hydrationTreatment">
-                            <label class="form-check-label" for="hydrationTreatment">Hydration Treatment</label>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" id="signatureCut" name="service1" value="signatureCut">
-                            <label class="form-check-label" for="signatureCut">Signature Cut</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" id="curlWaveStyle" name="service2" value="curlWaveStyle">
-                            <label class="form-check-label" for="curlWaveStyle">Curl &amp; Wave Style</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="scalpTherapy" name="addons" value="scalpTherapy">
-                            <label class="form-check-label" for="scalpTherapy">Scalp Therapy</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" id="premiumCut" name="service1" value="premiumCut">
-                            <label class="form-check-label" for="premiumCut">Premium Cut</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" id="sleekPressStyle" name="service2" value="sleekPressStyle">
-                            <label class="form-check-label" for="sleekPressStyle">Sleek Press Style</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="hotTowelService" name="addons" value="hotTowelService">
-                            <label class="form-check-label" for="hotTowelService">Hot Towel Service</label>
-                            </div>
-                        </div>
-                        </div>
-                    </form>
-                    </div>
-                    </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
-                </div>
-
-                <div id="collapseDate" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>What date?</p>
-                        <!-- Bootstrap has various input components. Some examples are given here: -->
-                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
-                        <div class="form-group row">
-                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
-                            <div class="col-10">
-                                <input class="form-control" type="datetime-local" value="2026-02-10T13:45:00" id="dateTimeInput">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
-                </div>
-                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>Your information so we can contact you</p>
-                        <p>Form to enter name, email, phone</p>
-
-                        <form id="bookingForm">
-                        <div class="form-group">
-                            <label for="exampleInputName">Name</label>
-                            <input type="text" class="form-control" id="nameInput" placeholder="Enter name">
-                            
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPhone">Phone number</label>
-                            <input type="text" class="form-control" id="phoneInput" placeholder="Enter phone number">
-                        </div>
- 
-                        <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
-                        
                     </div>
                 </div>
-            </div>
 
-            <!-- Confirmation Modal -->
-            <!-- Modal component: https://getbootstrap.com/docs/4.6/components/modal/ -->
-            <div class="modal fade" id="confirmModal">
-                 <div class="modal-dialog" role="document">
-            
-                <div class="modal-content">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                    </div>
 
-                <h4 class="modal-title">Booking Confirmed!</h4>
-                
-                <div class="modal-body" id="confirmText"></div>
-
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
+                    <div id="collapseDate" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>What date?</p>
+                            <!-- Bootstrap has various input components. Some examples are given here: -->
+                            <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                            <div class="form-group row">
+                                <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="datetime-local" value="2026-02-10T13:45:00"
+                                        id="dateTimeInput">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your
+                            info</a>
+                    </div>
+                    <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Your information so we can contact you</p>
+                            <p>Form to enter name, email, phone</p>
+
+                            <form id="bookingForm">
+                                <div class="form-group">
+                                    <label for="exampleInputName">Name</label>
+                                    <input type="text" class="form-control" id="nameInput" placeholder="Enter name">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail"
+                                        aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                        with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPhone">Phone number</label>
+                                    <input type="text" class="form-control" id="phoneInput"
+                                        placeholder="Enter phone number">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <script>
-            document.getElementById("bookingForm").addEventListener("submit", function(e){
-                e.preventDefault(); // stop refresh
+                <!-- Confirmation Modal -->
+                <!-- Modal component: https://getbootstrap.com/docs/4.6/components/modal/ -->
+                <div class="modal fade" id="confirmModal">
+                    <div class="modal-dialog" role="document">
 
-                // service1 - Haircut
-                const service1 = document.querySelector('input[name="service1"]:checked');
-                let service1Text = service1 ? document.querySelector('label[for="'+service1.id+'"]').innerText : "None";
+                        <div class="modal-content">
 
-                // service2 - Hairstyling
-                const service2 = document.querySelector('input[name="service2"]:checked');
-                let service2Text = service2 ? document.querySelector('label[for="'+service2.id+'"]').innerText : "None";
+                            <h4 class="modal-title">Booking Confirmed!</h4>
 
-                // addons
-                const addons = document.querySelectorAll('input[name="addons"]:checked');
-                let addonList = [];
-                addons.forEach(a => {
-                    addonList.push(document.querySelector('label[for="'+a.id+'"]').innerText);
-                });
-                if(addonList.length === 0) addonList.push("None");
+                            <div class="modal-body" id="confirmText"></div>
 
-                // date
-                const date_old = document.getElementById("dateTimeInput").value || "Not chosen";
-                if (date_old !== "Not chosen") {
-                    date = date_old.replace("T", " ");
-                }
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                // info
-                const name = document.getElementById("nameInput").value || "Blank";
-                const email = document.getElementById("exampleInputEmail").value || "Blank";
-                const phone = document.getElementById("phoneInput").value || "Blank";
+                        </div>
+                    </div>
+                </div>
 
-                // put text into modal
-                document.getElementById("confirmText").innerHTML =
-                    "<strong>Haircut:</strong> " + service1Text + "<br>" +
-                    "<strong>Hairstyling:</strong> " + service2Text + "<br>" +
-                    "<strong>Add-ons:</strong> " + addonList.join(", ") + "<br>" +
-                    "<strong>Date and time:</strong> " + date + "<br>" +
-                    "<strong>Name:</strong> " + name + "<br>" +
-                    "<strong>Email:</strong> " + email + "<br>" +
-                    "<strong>Phone:</strong> " + phone;
+                <script>
+                    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+                        e.preventDefault(); // stop refresh
 
-                // open modal
-                $('#confirmModal').modal('show');
-            });
-            </script>
+                        // service1 - Haircut
+                        const service1 = document.querySelector('input[name="service1"]:checked');
+                        let service1Text = service1 ? document.querySelector('label[for="' + service1.id + '"]').innerText : "None";
+
+                        // service2 - Hairstyling
+                        const service2 = document.querySelector('input[name="service2"]:checked');
+                        let service2Text = service2 ? document.querySelector('label[for="' + service2.id + '"]').innerText : "None";
+
+                        // addons
+                        const addons = document.querySelectorAll('input[name="addons"]:checked');
+                        let addonList = [];
+                        addons.forEach(a => {
+                            addonList.push(document.querySelector('label[for="' + a.id + '"]').innerText);
+                        });
+                        if (addonList.length === 0) addonList.push("None");
+
+                        // date
+                        const date_old = document.getElementById("dateTimeInput").value || "Not chosen";
+                        if (date_old !== "Not chosen") {
+                            date = date_old.replace("T", " ");
+                        }
+
+                        // info
+                        const name = document.getElementById("nameInput").value || "Blank";
+                        const email = document.getElementById("exampleInputEmail").value || "Blank";
+                        const phone = document.getElementById("phoneInput").value || "Blank";
+
+                        // put text into modal
+                        document.getElementById("confirmText").innerHTML =
+                            "<strong>Haircut:</strong> " + service1Text + "<br>" +
+                            "<strong>Hairstyling:</strong> " + service2Text + "<br>" +
+                            "<strong>Add-ons:</strong> " + addonList.join(", ") + "<br>" +
+                            "<strong>Date and time:</strong> " + date + "<br>" +
+                            "<strong>Name:</strong> " + name + "<br>" +
+                            "<strong>Email:</strong> " + email + "<br>" +
+                            "<strong>Phone:</strong> " + phone;
+
+                        // open modal
+                        $('#confirmModal').modal('show');
+                    });
+                </script>
 
 
 </body>
