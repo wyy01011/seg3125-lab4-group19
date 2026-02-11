@@ -18,7 +18,7 @@
     <div class="services"> <!--Section to list out all services and their prices.-->
         <h3>Services & Pricing</h3>
         <br>
-        <div class="container"> <!--Holds a table created from bootstrap componenets. External css added.-->
+        <div class="table-responsive"> <!--Holds a table created from bootstrap componenets. External css added.-->
             <h4>Haircuts</h4>
             <p>All haircut sessions include a consultation session, shampoo & conditioner, a stress-relieving scalp
                 massage, and a complimentary slice of Cheesecake.</p>
@@ -50,7 +50,7 @@
             </table>
         </div>
 
-        <div class="container">
+        <div class="table-responsive">
             <h4>Hairstyling</h4>
             <p>Style off your hair after a fresh cut or walk in! Additional charges apply.</p>
             <table class="table">
@@ -81,7 +81,7 @@
             </table>
         </div>
 
-        <div class="container">
+        <div class="table-responsive">
             <h4>Add Ons</h4>
             <p>Add on additional treatments and services to your haircuts or hairstyling appointments.</p>
             <table class="table">
@@ -168,7 +168,8 @@
 
     <!-- Collapsible with multiple items -->
     <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
-    <div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="w-100" style="max-width: 500px;">
         <h3>Book Here</h3>
         <div id="accordion">
             <div class="card">
@@ -180,21 +181,21 @@
                         <p>Here is our list of services</p>
 
                         <form>
-                            <div class="row">
+                            <div class="row mx-0">
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <h4>Haircuts</h4>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <h4>Hairstyling</h4>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <h4>Add-ons</h4>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" id="classicCut" name="service1"
                                             value="classicCut">
@@ -202,7 +203,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" id="blowoutStyle" name="service2"
                                             value="blowoutStyle">
@@ -210,7 +211,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="hydrationTreatment"
                                             name="addons" value="hydrationTreatment">
@@ -220,7 +221,7 @@
                                 </div>
 
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" id="signatureCut" name="service1"
                                             value="signatureCut">
@@ -228,7 +229,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" id="curlWaveStyle" name="service2"
                                             value="curlWaveStyle">
@@ -237,7 +238,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="scalpTherapy" name="addons"
                                             value="scalpTherapy">
@@ -245,7 +246,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" id="premiumCut" name="service1"
                                             value="premiumCut">
@@ -253,7 +254,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" id="sleekPressStyle"
                                             name="service2" value="sleekPressStyle">
@@ -262,7 +263,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-12 col-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="hotTowelService"
                                             name="addons" value="hotTowelService">
@@ -282,11 +283,11 @@
 
                     <div id="collapseDate" class="collapse" data-parent="#accordion">
                         <div class="card-body">
-                            <p>What date?</p>
+                            <p>What date and time?</p>
                             <!-- Bootstrap has various input components. Some examples are given here: -->
                             <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
                             <div class="form-group row">
-                                <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                                <label for="dateTimeInput" class="col-2 col-form-label">Date and Time</label>
                                 <div class="col-10">
                                     <input class="form-control" type="datetime-local" value="2026-02-10T13:45:00"
                                         id="dateTimeInput">
@@ -328,6 +329,7 @@
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
 
+                        </div>
                         </div>
                     </div>
                 </div>
