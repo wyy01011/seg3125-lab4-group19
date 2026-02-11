@@ -1,5 +1,8 @@
 # seg3125-lab4-group19
 
 References:
+- Bootstrap example code retrieved from GitHub example provided: https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module4-Service/index.html
 - Bootstrap table components code retrieved from W3Schools: https://www.w3schools.com/bootstrap4/bootstrap_tables.asp
+- Bootstrap card components code retrieved from W3Schools: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
 - Background images retrieved from Freepik: [https://stock.adobe.com/ca](https://www.freepik.com/)
+- Staff member profiles and pictures retrieved from existing Barbershop website: https://losbarberosclassicbarbershop.com/barbers/
