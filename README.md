@@ -6,3 +6,5 @@ References:
 - Bootstrap card components code retrieved from W3Schools: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
 - Background images retrieved from Freepik: [https://stock.adobe.com/ca](https://www.freepik.com/)
 - Staff member profiles and pictures retrieved from existing Barbershop website: https://losbarberosclassicbarbershop.com/barbers/
+- Haircut images retrieved from a top 25 haircut list: https://didahairstudio.com/blog/mens-hairstyles-2026-trending-styles-queens-nyc
+- Hairstyle images retrieved from a top 36 hairstyle list: https://www.styleseat.com/blog/short-hairstyles-men/
