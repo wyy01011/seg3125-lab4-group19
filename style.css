@@ -113,9 +113,27 @@ h3, h4 {
 
 .top-carousel-btn {
   border-radius: 999px;
-  padding: 10px 22px;
-  font-weight: 700;
+  padding: 12px 18px;      
+  font-weight: 600;          
+  background: #616161;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.22);
+  border: none; 
+  outline: none; 
 }
+
+/*Redesign bootstrap button.*/
+.top-carousel-btn:hover,
+.top-carousel-btn:focus,
+.top-carousel-btn:active {
+  background: #616161;         
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.22); 
+}
+
 
 /* Floating book button */
 .floating-book-btn {
@@ -152,5 +170,14 @@ h3, h4 {
 
 .site-footer a:hover {
   filter: brightness(0.9);
+}
+
+.top-carousel-overlay {
+  background-image: url("staffbg.jpg"); 
+  background-size: cover;     
+  background-position: center; 
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  color: white;           
 }
 
